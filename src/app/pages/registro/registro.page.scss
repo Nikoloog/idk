@@ -1,0 +1,57 @@
+.logo-login {
+    width: fit-content;
+    margin-left: 80px;
+    margin-top: 30px;
+    /*align-items: center;*/
+}
+
+ion-content {
+    --background: #6d6d6d;
+}
+
+.input-login {
+    margin: 10px;
+    padding: 5px;
+    background: grey;
+}
+
+.btn-login {
+    text-align: center;
+}
+
+.app-title {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Color amarillo como el del "vivo" de el logo de la aplicaión VivoDuoc*/
+.registr {
+    color: #FFC107;
+}
+
+/* Color blanco como el del "Duoc" de el logo de la aplicación VivoDuoc*/
+.app {
+    color: #ffffff;
+}
+
+ion-avatar {
+    --border-radius: 4px;
+}
+
+.titulo-registro {
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.btn-registrar {
+    padding: 20px;
+}
+
+/*.back-button-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 16px;
+}*/

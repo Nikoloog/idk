@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="titulo-alerte" color="warning">
+    <ion-title>Alerta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="image">
+    <img alt="" src="../../../assets/img/peligro.png" width="200" />
+    <ion-card-header>
+      <ion-card-title>¡Acceso a la Cámara!</ion-card-title>
+      <ion-card-subtitle>Ahora que confirmamos que estas a menos de 500mts de DuocUC, puedes acceder a la
+        cámara</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <div class="btn-acceso-camara">
+    <ion-button expand="block" color="warning" routerLink="/acceso-camera">Acceder a la Camara</ion-button>
+  </div>
+</ion-content>

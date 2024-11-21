@@ -1,0 +1,65 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="warning" class="titulo-menu-docente">
+        <ion-title>Menú</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+      <p style="text-align: center;">Todos los derechos reservados a RegistrAPP Duoc UC.</p>
+      <div class="btn-logout">
+        <ion-button expand="block" class="btn-cerrar-sesion" color="light" routerLink="/login">
+          Cerrar Sesión
+        </ion-button>
+      </div>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="warning">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menú Docente</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+      <div style="text-align: center;">
+        <h2>Bienvenido, Profesor</h2>
+        <p>{{ userName }}</p>
+      </div>
+
+      <div class="gift_anima" style="display: flex; justify-content: center; margin: 20px 0;">
+        <div class="img-docente">
+          <img alt="login docente" src="../../../assets/img/Hola.png" style="max-width: 100%; height: auto;" />
+        </div>
+      </div>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" size-md="6" style="text-align: center;">
+            <ion-button style="border: 1px solid black;" expand="block" color="warning" routerLink="/mostrarqr">
+              Iniciar Clase
+            </ion-button>
+          </ion-col>
+          <ion-col size="12" size-md="6" style="text-align: center;">
+            <ion-button style="border: 1px solid black;" expand="block" color="warning" routerLink="/guardarclase">
+              Ver Secciones
+            </ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12" style="text-align: center;">
+            <ion-button style="border: 1px solid black;" expand="block" color="warning" routerLink="/crud">
+              Reprobados por Inasistencia
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+  </div>
+</ion-app>
+

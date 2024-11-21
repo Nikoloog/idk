@@ -1,0 +1,43 @@
+.logo-login ion-img {
+  margin-bottom: 30px;
+}
+
+a {
+  color: var(--ion-color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn-login ion-button {
+  --border-radius: 8px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+}
+
+.app-title {
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Color amarillo como el del "vivo" de el logo de la aplicaión VivoDuoc*/
+.registr {
+  color: #FFC107;
+}
+
+/* Color blanco como el del "Duoc" de el logo de la aplicación VivoDuoc*/
+.app {
+  color: #ffffff;
+}
+
+ion-content {
+  --background: #6d6d6d;
+}
+
+.btn-login {
+  padding: 5px;
+}

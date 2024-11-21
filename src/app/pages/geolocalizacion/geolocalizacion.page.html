@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="titulo-geo" color="warning">
+    <ion-title>Geolocalizacion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Botón de retroceso debajo del título -->
+  <div class="back-button-container">
+    <ion-buttons>
+      <ion-back-button default-href="/guardarclase" text="Atrás"></ion-back-button>
+    </ion-buttons>
+  </div>
+
+  <ion-card>
+    <div class="image">
+      <img alt="" src="../../../assets/img/peligro.png" width="" />
+    </div>
+    <!-- <componente></componente> -->
+    <div class="contenido-geo">
+      <ion-card-header>
+        <ion-card-title>Ahora Confirmaremos que esta a menos de 500 MTS de DuocUC</ion-card-title>
+        <!--<ion-card-subtitle>Necesitamos acceso a la cámara para que puedas escanear el QR para poder registrar su
+          asistencia.</ion-card-subtitle>-->
+      </ion-card-header>
+    </div>
+  </ion-card>
+
+  <div class="btn-conf-cod-num">
+    <!-- <componente></componente> -->
+    <ion-button expand="block" routerLink="/ubicacion" color="warning">Verificar si estoy en Duoc UC</ion-button>
+  </div>
+
+</ion-content>

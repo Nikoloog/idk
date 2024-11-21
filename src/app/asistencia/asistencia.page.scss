@@ -1,0 +1,63 @@
+.asistencia-content {
+    --background: #6d6d6d;
+}
+
+.asistencia-card {
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.asistencia-card h2 {
+    font-size: 1.2em;
+    margin: 0 0 8px 0;
+}
+
+.asistencia-card p {
+    font-size: 0.9em;
+    margin: 0;
+    color: #ccc;
+}
+
+.alumno-item {
+    --ion-item-background: #333;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #444;
+}
+
+.alumno-item ion-avatar img {
+    border-radius: 50%;
+}
+
+.alumno-item ion-label h3 {
+    font-size: 1em;
+    margin: 0;
+    color: #fff;
+}
+
+.asistencia-status {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.presente {
+    color: #00c853;
+    /* Verde para 'Presente' */
+}
+
+.ausente {
+    color: #ff5252;
+    /* Rojo para 'Ausente' */
+}
+
+.back-button-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 16px;
+}
+  

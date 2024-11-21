@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Clase Hogwarts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="asistencia-content">
+  <!-- Botón de retroceso debajo del título -->
+  <div class="back-button-container">
+    <ion-buttons>
+      <ion-back-button default-href="/guardarclase" text="Atrás"></ion-back-button>
+    </ion-buttons>
+  </div>
+
+  <div class="asistencia-card">
+    <h2>Programacion Movil [N° Sección]</h2>
+    <p>Alumnos</p>
+    <ion-list>
+      <ion-item *ngFor="let alumno of alumnos" class="alumno-item">
+        <ion-avatar slot="start">
+          <img [src]="alumno.image || 'https://via.placeholder.com/50'" alt="Foto de {{alumno.name}}">
+        </ion-avatar>
+        <ion-label>
+          <h3>{{ alumno.name }}</h3>
+        </ion-label>
+        <span class="asistencia-status" [ngClass]="{'presente': alumno.presente, 'ausente': !alumno.presente}">
+          {{ alumno.presente ? 'Presente' : 'Ausente' }}
+        </span>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

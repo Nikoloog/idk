@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning" class="btn-mostrarCod">
+    <ion-title>Verificación por números</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Botón de retroceso debajo del título -->
+  <div class="back-button-container">
+    <ion-buttons>
+      <ion-back-button default-href="/guardarclase" text="Atrás"></ion-back-button>
+    </ion-buttons>
+  </div>
+
+  <ion-card>
+    <ion-card-header class="contenido">
+      <ion-card-title>
+        ¡PONGA ATENCION A LOS NUMEROS A INGRESAR, YA QUE SOLO SE MOSTRARA UNA VEZ!
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-header>
+      <ion-card-title>Verificación presencial</ion-card-title>
+      <ion-card-subtitle>Ingrese los dígitos en su aplicación</ion-card-subtitle>
+    </ion-card-header>
+
+    <!-- Caja de autenticación para mostrar los números aleatorios -->
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col *ngFor="let numero of numerosAleatorios" size="2">
+            <ion-input value="{{ numero }}" readonly></ion-input>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <!-- Temporizador -->
+      <div style="text-align: center; margin-top: 10px;">
+        <h2>{{ tiempoRestante }}</h2>
+      </div>
+
+      <!-- Barra de progreso -->
+      <ion-progress-bar [value]="progreso" color="warning" style="margin-top: 10px;"></ion-progress-bar>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

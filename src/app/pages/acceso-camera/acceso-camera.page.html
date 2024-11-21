@@ -1,0 +1,25 @@
+<!--<ion-header [translucent]="true">
+  <ion-toolbar color="warning" class="titulo-acce-camera">
+    <ion-title>Acceso Camara</ion-title>
+  </ion-toolbar>  
+</ion-header>-->
+
+<ion-content [fullscreen]="true">
+  <ion-card class="contenido-acces-camara">
+    <div class="contenido-camara">
+      <ion-card-header>
+        <ion-card-title>¡Acceso a la Cámara!</ion-card-title>
+        <ion-card-subtitle>Necesitamos acceso a la cámara para que puedas escanear el QR para poder registrar su
+          asistencia.</ion-card-subtitle>
+      </ion-card-header>
+    </div>
+    <div class="logo-camara">
+      <img alt="" src="../../../assets/img/visor-de-la-camara (2).png" width="200" />
+    </div>
+  </ion-card>
+
+  <div class="btn-confirmacion">
+    <ion-button color="warning" expand="block" routerLink="/scaner">Acceder a la cámara </ion-button>
+    <!--<ion-button color="warning" style="padding-left: 30px;">NO</ion-button>-->
+  </div>
+</ion-content>
