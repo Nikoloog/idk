@@ -1,9 +1,3 @@
-<!--<ion-header [translucent]="true">
-  <ion-toolbar color="warning" class="titulo-acce-camera">
-    <ion-title>Acceso Camara</ion-title>
-  </ion-toolbar>  
-</ion-header>-->
-
 <ion-content [fullscreen]="true">
   <ion-card class="contenido-acces-camara">
     <div class="contenido-camara">
@@ -19,7 +13,19 @@
   </ion-card>
 
   <div class="btn-confirmacion">
-    <ion-button color="warning" expand="block" routerLink="/scaner">Acceder a la cámara </ion-button>
-    <!--<ion-button color="warning" style="padding-left: 30px;">NO</ion-button>-->
+    <ion-button color="warning" expand="block" (click)="startScan()">Acceder a la cámara</ion-button>
+  </div>
+
+  <div id="reader" style="width: 100%; height: 300px; margin-top: 20px;"></div>
+
+  <div *ngIf="scanResult">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Resultado del Escaneo</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{ scanResult }}
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>
