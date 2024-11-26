@@ -1,0 +1,55 @@
+.logo-camara {
+    text-align: center;
+    padding: 30px;
+}
+
+.btn-confirmacion {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.titulo-acce-camera {
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+.contenido-camara {
+    text-align: center;
+}
+
+.contenido-acces-camara {
+    margin-top: 50px;
+}
+
+ion-content {
+    --background: #6d6d6d;
+}
+
+ion-content.background {
+    --background: url(../../../assets/img/fondo.jpg) 0 0/100% 100% no-repeat;
+}
+
+.resultado-escaneo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.resultado-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultado-icon {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.btn-volver {
+    margin-top: 20px;
+    padding: 10px;
+}

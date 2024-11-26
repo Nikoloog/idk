@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning" class="titulo-cod-page">
+    <ion-title>Ingreso Código Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background" [fullscreen]="true">
+  <!-- Botón de retroceso debajo del título -->
+  <div class="back-button-container">
+    <ion-buttons>
+      <ion-back-button default-href="/intro" text="Atrás"></ion-back-button>
+    </ion-buttons>
+  </div>
+
+  <h1 class="app-title">
+    <span class="registr">Registr</span><span class="app">APP</span>
+  </h1>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="contenido">
+        {{ userName }} Asegurese de ingresar el código que mostrara el docente en pantalla de forma correcta.
+      </ion-card-title>
+    </ion-card-header>
+
+    <!--<img alt="" src="../../../assets/img/senal-de-stop.png" width="600" />-->
+    <ion-card-header>
+      <ion-input labelPlacement="floating" [counter]="true" maxlength="6"></ion-input>
+      <ion-card-subtitle>Ingrese los Digitos</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
+  <div class="btn-conf-cod-num">
+    <ion-button color="warning" expand="block" routerLink="/geolocalizacion">Confirmar</ion-button>
+  </div>
+
+</ion-content>

@@ -1,0 +1,71 @@
+<ion-app>
+
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="warning" class="titulo-menu-alumno">
+        <ion-title>Menú</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+      <p style="text-align: center;">Todos los derechos reservados a RegistrAPP Duoc UC.</p>
+      <div class="btn-logout">
+        <ion-button expand="block" class="btn-cerrar-sesion" color="light" routerLink="/login">
+          Cerrar Sesión
+        </ion-button>
+      </div>
+      <div class="btn-cursos-disponibles">
+        <ion-button expand="block" class="btn-cursos-disponibles" color="light" routerLink="/cursos-disponibles">
+          Cursos Disponibles
+        </ion-button>
+      </div>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="warning">
+        <ion-title>Bienvenido {{ userName }} </ion-title>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="background">
+      <ion-card class="card" (click)="goToGeolocalizacion({
+        nombre: 'Programación de aplicaciones móviles',
+        horario: '8:30 - 10:40',
+        sala: 'L08 Laboratorio de computación',
+        seccion: '001D10',
+        profesor: 'Freddy Campos'
+      })">
+        <img src="assets/img/Hola.png" alt="Programación de aplicaciones móviles" />
+        <ion-card-content>
+          <h2>Programación de aplicaciones móviles</h2>
+          <p>Horario: 8:30 - 10:40</p>
+          <p>Sala: L08 Laboratorio de computación</p>
+          <p>Sección: 001D10</p>
+          <p>Profesor: Freddy Campos</p>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="card" (click)="goToGeolocalizacion({
+        nombre: 'Ética Profesional',
+        horario: '12:11 - 13:40',
+        sala: 'Sala 424',
+        seccion: '001D',
+        profesor: 'Jaime Lopez'
+      })">
+        <img src="assets/img/etica.png" alt="Ética Profesional" />
+        <ion-card-content>
+          <h2>Ética Profesional</h2>
+          <p>Horario: 12:11 - 13:40</p>
+          <p>Sala: Sala 424</p>
+          <p>Sección: 001D</p>
+          <p>Profesor: Jaime Lopez</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-content>
+  </div>
+</ion-app>

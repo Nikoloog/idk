@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning" class="titulo-home">
+    <ion-title>
+      Menú Principal
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background">
+
+  <ion-card class="logo-app" color="light">
+    <div class="imagen">
+      <img alt="Silhouette of mountains" src="../../../assets/img/logo-duoc.png" />
+    </div>
+    <ion-card-header>
+      <h1 class="app-title">
+        <span class="registr">Registr</span><span class="app">APP</span>
+      </h1>
+      <ion-card-subtitle></ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Bienvenido a nuestra APP de registro de asistencia.
+    </ion-card-content>
+  </ion-card>
+
+  <div class="btn-ingreso">
+    <ion-button style="border: 1px solid rgb(0, 0, 0);" expand="block" color="warning" routerLink="/login">ENTRAR</ion-button>
+  </div>
+
+</ion-content>

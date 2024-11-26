@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning" class="btn-seccion">
+    <ion-title>Alumnos Registrados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background" [fullscreen]="true">
+  <!-- Botón de retroceso debajo del título -->
+  <div class="back-button-container">
+    <ion-buttons>
+      <ion-back-button default-href="/guardarclase" text="Atrás"></ion-back-button>
+    </ion-buttons>
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Programacion Movil</ion-card-title>
+      <ion-card-subtitle>Alumnos</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let alumno of alumnos">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="../../../assets/img/persona.png" />
+          </ion-thumbnail>
+          <ion-label>{{ alumno.estudiante }}</ion-label>
+          <ion-icon name="checkmark-circle" color="success" slot="end"></ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="btn-guardar-clase">
+    <ion-button color="warning" routerLink="/confirclase">Continuar con el registro</ion-button>
+  </div>
+
+  <div class="btn-volver">
+    <ion-button color="primary" expand="block" routerLink="/logindocente">Volver</ion-button>
+  </div>
+</ion-content>

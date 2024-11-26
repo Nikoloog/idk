@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="titulo" color="warning">
+    <ion-title>Secciones Programación Movil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background" [fullscreen]="true">
+  <!-- Botón de retroceso debajo del título -->
+  <div class="back-button-container">
+    <ion-buttons>
+      <ion-back-button default-href="/logindocente" text="Atrás"></ion-back-button>
+    </ion-buttons>
+  </div>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Programación Móvil</ion-card-title>
+      <ion-card-subtitle>Docente: Freddy Campos</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="../../../assets/img/clase-movil.png" />
+          </ion-thumbnail>
+          <ion-label>Seccion: 013D</ion-label>
+          <ion-label>Hra: 8:30-10:20</ion-label>
+          <ion-button color="warning" routerLink="/secciones">Ingresar</ion-button>
+        </ion-item>
+
+        <!-- <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="../../../assets/img/clase-movil.png" />
+          </ion-thumbnail>
+          <ion-label>Seccion: 023D</ion-label>
+          <ion-label>Hra: 8:30-10:20</ion-label>
+          <ion-button color="warning" routerLink="/secciones">Ingresar</ion-button>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="../../../assets/img/clase-movil.png" />
+          </ion-thumbnail>
+          <ion-label>Seccion: 025D</ion-label>
+          <ion-label>Hra: 8:30-10:20</ion-label>
+          <ion-button color="warning" routerLink="/secciones">Ingresar</ion-button>
+        </ion-item> -->
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

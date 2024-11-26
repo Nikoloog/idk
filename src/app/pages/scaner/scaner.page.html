@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar class="titulo-ubi" color="warning">
+    <ion-title>Escáner QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div *ngIf="!isScanning">
+    <ion-button expand="block" (click)="startScan()">Iniciar Escaneo QR</ion-button>
+  </div>
+
+  <div *ngIf="isScanning">
+    <ion-button expand="full" color="danger" (click)="stopScan()">Detener Escaneo</ion-button>
+    <ion-button expand="full" color="light" (click)="stopScan()">Cancelar Escaneo</ion-button>
+  </div>
+
+  <div *ngIf="scanResult">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Resultado del Escaneo</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{ scanResult }}
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

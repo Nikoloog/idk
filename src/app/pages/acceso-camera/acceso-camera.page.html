@@ -1,0 +1,40 @@
+<ion-content class="background" [fullscreen]="true">
+  <ion-card class="contenido-acces-camara">
+    <div class="contenido-camara">
+      <ion-card-header>
+        <ion-card-title>¡Acceso a la Cámara!</ion-card-title>
+        <ion-card-subtitle>Necesitamos acceso a la cámara para que puedas escanear el QR para poder registrar su
+          asistencia.</ion-card-subtitle>
+      </ion-card-header>
+    </div>
+    <div class="logo-camara">
+      <img alt="" src="../../../assets/img/visor-de-la-camara (2).png" width="200" />
+    </div>
+  </ion-card>
+
+  <div class="btn-confirmacion">
+    <ion-button color="warning" expand="block" (click)="startScan()">Acceder a la cámara</ion-button>
+  </div>
+
+  <div id="reader" style="width: 100%; height: 300px; margin-top: 20px;"></div>
+
+  <div *ngIf="scanResult" class="resultado-escaneo">
+    <ion-card>
+      <ion-card-header class="resultado-header">
+        <img src="../../../assets/img/asistencia.jpg" alt="Ticket Bueno" class="resultado-icon" />
+        <ion-card-title>Resultado del Escaneo</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p><strong>Asignatura:</strong> {{ scanResult?.asignatura }}</p>
+        <p><strong>Profesor:</strong> {{ scanResult?.profesor }}</p>
+        <p><strong>Estudiante:</strong> {{ scanResult?.estudiante }}</p>
+        <p><strong>Sección:</strong> {{ scanResult?.seccion }}</p>
+        <p><strong>Asistencia:</strong> Correcta</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div class="btn-volver">
+    <ion-button color="primary" expand="block" routerLink="/intro">Volver</ion-button>
+  </div>
+</ion-content>

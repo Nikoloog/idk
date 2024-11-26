@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Cursos Disponibles</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-card class="card" *ngFor="let curso of cursos">
+    <ion-card-content>
+      <h2>{{ curso.nombre }} - {{ curso.progreso }}%</h2>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="btn-volver">
+    <ion-button color="primary" expand="block" routerLink="/intro">Volver</ion-button>
+  </div>
+</ion-content>

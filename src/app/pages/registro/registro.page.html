@@ -1,0 +1,82 @@
+<ion-content class="background">
+  <h1 class="app-title">
+    <span class="registr">Regi</span><span class="app">stro</span>
+  </h1>
+  <div class="logo-login" style="display: flex; justify-content: center; margin-top: 20px;">
+    <ion-img src="../../../assets/img/logo-RegistrAPP.png" style="max-width: 200px;"></ion-img>
+  </div>
+
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-md="6" size-sm="12">
+        <form (ngSubmit)="register()" class="ion-padding">
+          <ion-item>
+            <ion-label position="floating">Nombre</ion-label>
+            <ion-input [(ngModel)]="nombre" name="nombre" required></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Apellido</ion-label>
+            <ion-input [(ngModel)]="apellido" name="apellido" required></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Teléfono</ion-label>
+            <ion-input [(ngModel)]="telefono" name="telefono" required></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Correo</ion-label>
+            <ion-input [(ngModel)]="userName" name="userName" required></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input [(ngModel)]="password" name="password" type="password" required></ion-input>
+          </ion-item>
+
+          <div class="btn-registrar">
+            <ion-button expand="block" type="submit" color="warning">Registrar</ion-button>
+          </div>
+
+          <div style="display: flex; justify-content: center;">
+            ¿Ya tienes Cuenta? 
+            <a style="font-size: 14px;" routerLink="/login"> Iniciar Sesión</a>
+          </div>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<!--
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title>Registro RegistrAPP</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <img alt="Silhouette of a person's head" src="../../../assets/img/logo-RegistrAPP.png" style="max-width: 200px; height: auto;" />
+  </div>
+
+
+  <div style="margin-top: 40px; padding: 0 20px;">
+    <ion-input label="Nombre Usuario" label-placement="floating" fill="outline" placeholder="Ingrese Nombre Usuario"></ion-input>
+  </div>
+
+  <div style="margin-top: 20px; padding: 0 20px;">
+    <ion-input label="Contraseña" type="password" label-placement="floating" fill="outline" placeholder="Ingrese Contraseña"></ion-input>
+  </div>
+
+  <div style="margin-top: 20px; padding: 0 20px;">
+    <ion-input label="Reingrese Contraseña" type="password" label-placement="floating" fill="outline" placeholder="Reingrese Contraseña"></ion-input>
+  </div>
+
+  <div style="display: flex; justify-content: center; margin-top: 30px;">
+    <ion-button expand="block" color="primary" style="width: 80%;" routerLink="/intro">Registrarse</ion-button>
+  </div>
+
+</ion-content>
+ -->

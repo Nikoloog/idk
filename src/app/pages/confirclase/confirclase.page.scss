@@ -1,0 +1,23 @@
+.titulo-confirclase {
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.btn-conf-cod-num {
+    text-align: center;
+    margin: 30px;
+}
+
+ion-content {
+    --background: #6d6d6d;
+}
+
+.back-button-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 16px;
+}
+
+ion-content.background{
+    --background: url(../../../assets/img/fondo.jpg) 0 0/100% 100% no-repeat;
+}

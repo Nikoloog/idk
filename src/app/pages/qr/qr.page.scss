@@ -1,0 +1,15 @@
+.btn-qr {
+    padding: 15px;
+}
+
+.titulo-qr {
+    text-align: center;
+}
+
+ion-content {
+    --background: #6d6d6d;
+}
+
+ion-content.background{
+    --background: url(../../../assets/img/fondo.jpg) 0 0/100% 100% no-repeat;
+}

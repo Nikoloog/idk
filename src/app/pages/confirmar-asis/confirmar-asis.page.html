@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning" class="titulo-asis">
+    <ion-title>Asistencia Confirmada</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background" [fullscreen]="true">
+  <ion-card class="contenido-conf-asis">
+    <h1 class="app-title">
+      <span class="app">Feli</span><span class="registr">cidades</span>
+    </h1>
+    <!--<ion-card-title class="contenido-asis-titulo">Lo felicita</ion-card-title>-->
+    <div class="img-confirmar">
+      <img alt="" src="../../../assets/img/cheque.png" width="200" />
+    </div>
+    <ion-card-header class="contenido-asis-titulo">
+      <ion-card-title>La Asistencia se ha Registrado</ion-card-title>
+      <ion-card-subtitle>Estimado(a) {{ userName }},</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content class="contenido-asis">
+      Hoy [Fecha asistencia] se ha registrado su asistencia de la asignatura [Nombre asignatura].
+    </ion-card-content>
+
+
+  </ion-card>
+  <div class="btn-regreso">
+    <ion-button color="warning" expand="block" (click)="goToIntro()">Volver al menú principal</ion-button>
+  </div>
+</ion-content>

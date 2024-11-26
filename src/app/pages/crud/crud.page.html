@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning" class="titulo-reprobados">
+    <ion-title>Alumnos Reprobados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-buttons slot="start">
+  <ion-back-button default-href="/logindocente"></ion-back-button>
+</ion-buttons>
+
+<ion-content class="background" [fullscreen]="true">
+  <!-- IMAGEN CRUD -->
+  <div class="gift_anima" style="display: flex; justify-content: center; margin: 20px 0;">
+    <div class="img-docente">
+      <img alt="login docente" src="../../../assets/img/estudiante-reprobado.jpg"
+        style="max-width: 100%; height: auto;" />
+    </div>
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Reprobados por Inasistencia</ion-card-title>
+      <ion-card-subtitle>Sección 013D</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-row *ngFor="let item of listado_item"></ion-row>
+          <div style="padding: 10px;">
+            <ion-row *ngFor="let item of listado_item; let i = index">
+              <ion-col>{{i + 1}}.- {{item.nombre}} {{item.apellido}}</ion-col>
+              <ion-col class="Reprobado">Reprobado</ion-col>
+            </ion-row>
+          </div>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <ion-button color="primary" (click)="descargarExcel()">Descargar Excel</ion-button>
+  </div>
+</ion-content>

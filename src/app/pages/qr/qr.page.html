@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning" class="titulo-qr">
+    <ion-title>QR - DOCENTE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background" [fullscreen]="true">
+  <ion-card>
+    <div class="img-confirmar" style="padding: 15px; display: flex; justify-content: center; align-items: center; height: 300px;">
+      <img src="../../../assets/img/QR.png" alt="QR Code" style="width: 256px; height: 256px;">
+    </div>
+  </ion-card>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <h2>Tiempo restante: {{ minutes }}:{{ seconds | number:'2.0' }}</h2>
+  </div>
+
+  <!--<div class="btn-qr">
+    <ion-button color="warning" expand="block" routerLink="/secciones">Ver Alumnos</ion-button>
+  </div>-->
+</ion-content>

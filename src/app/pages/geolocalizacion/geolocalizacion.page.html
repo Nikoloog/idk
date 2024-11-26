@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="titulo-geo" color="warning">
+    <ion-title>Geolocalización</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background" [fullscreen]="true">
+  <ion-card>
+    <div class="image">
+      <iframe [src]="mapUrl" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="contenido-geo">
+      <ion-card-header>
+        <ion-card-title>Confirmaremos que está a menos de 500 MTS de DuocUC</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Ubicación obtenida. Puedes proceder a escanear el QR.</p>
+      </ion-card-content>
+    </div>
+  </ion-card>
+
+  <div class="btn-escanear">
+    <ion-button color="warning" expand="block" (click)="navigateToScan()">Escanear QR</ion-button>
+  </div>
+</ion-content>

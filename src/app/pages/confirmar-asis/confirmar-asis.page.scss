@@ -1,0 +1,49 @@
+.img-confirmar {
+    text-align: center;
+}
+
+.titulo-asis {
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.contenido-conf-asis {
+    padding: 20px;
+}
+
+.btn-regreso {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.contenido-asis {
+    text-align: justify;
+}
+
+.contenido-asis-titulo {
+    text-align: center;
+}
+
+.app-title {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Color amarillo como el del "vivo" de el logo de la aplicaión VivoDuoc*/
+.registr {
+    color: #FFC107;
+}
+
+/* Color blanco como el del "Duoc" de el logo de la aplicación VivoDuoc*/
+.app {
+    color: #ffffff;
+}
+
+ion-content {
+    --background: #6d6d6d;
+}
+
+ion-content.background{
+    --background: url(../../../assets/img/fondo.jpg) 0 0/100% 100% no-repeat;
+}

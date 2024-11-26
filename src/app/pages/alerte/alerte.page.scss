@@ -1,0 +1,22 @@
+.titulo-alerte {
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.btn-acceso-camara {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.image {
+    margin-top: 50px;
+    text-align: center;
+}
+
+ion-content {
+    --background: #6d6d6d;
+}
+
+ion-content.background{
+    --background: url(../../../assets/img/fondo.jpg) 0 0/100% 100% no-repeat;
+}
